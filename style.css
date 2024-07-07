@@ -1,1 +1,245 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-areas:
+      "nav nav"
+      "left right"
+      "left foot";
+    grid-template-rows: 50px 1fr 60px;
+    grid-template-columns: 1fr 1.5fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.5);
+}
+
+.container nav {
+    grid-area: nav;
+    background-color: #ffffff;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+}
+
+nav ul li {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    font-size: 1.4em;
+    font-weight: 300;
+}
+
+nav a:visited {
+    color: #003147;
+}
+
+nav a:active {
+    color: #003147;
+}
+
+.container footer {
+    grid-area: foot;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+footer .year {
+    padding-top: 10px;
+}
+
+
+footer a:visited {
+    color: #003147;
+}
+
+footer a:active {
+    color: #003147;
+}
+
+.container .left-side{
+    grid-area: left;
+    position: relative;
+    background: #003147;
+    padding: 40px;
+}
+
+.profile-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.profile-text .img-box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-text .img-box img {
+    position: absolute;
+    top: -25px;
+    left: -45px;
+    width: 150%;
+    height: 150%;
+    object-fit: cover;
+}
+
+.profile-text h1{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.8em;
+}
+
+.profile-text h1 span {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.contacts {
+    padding-top: 20px;
+}
+
+.title {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contacts ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contacts ul li .icon {
+    display: inline-block;
+    width: 25px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+
+.contacts ul li span {
+    color: #fff;
+    font-weight: 300;
+}
+
+.contacts a:visited {
+    color: #fff;
+}
+
+.contacts a:active {
+    color: #fff;
+}
+
+.contacts a[href^="mailto:"] {
+    color: #fff;
+}
+
+.container .right-side {
+    grid-area: right;
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+.about {
+    margin-bottom: 50px;
+}
+
+.about:last-child {
+    margin-bottom: 0;
+}
+
+.about p {
+    margin-bottom: 50px;
+}
+
+.right-side .title {
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #333;
+}
+
+.about ul li{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .percent {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+}
+
+.skills .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+
+}
+
+.projects a:visited {
+    color: #003147;
+}
+
+.projects a:active {
+    color: #003147;
+}
