@@ -381,13 +381,7 @@ body.dark-theme {
 .footer__container {
     border-top: 2px solid var(--title-color);
     padding-top: 1.5rem;
-    grid-template-columns: repeat(2, max-content);
-    justify-content: space-between;
-    row-gap: 2.5rem;
-}
-
-.footer__contacts {
-    grid-template-columns: repeat(2, max-content);
+    grid-template-columns: repeat(3, max-content);
     justify-content: space-between;
     row-gap: 2.5rem;
 }
@@ -410,9 +404,8 @@ body.dark-theme {
     text-decoration: underline;
 }
 
-.footer__rss {
+.footer__align {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
